@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<h2>Contact Us</h2>
+<p>If you have any questions, feel free to reach out to us:</p>
+<form>
+    <div class="mb-3">
+        <label for="contactName" class="form-label">Your Name:</label>
+        <input type="text" class="form-control" id="contactName" required>
+    </div>
+    <div class="mb-3">
+        <label for="contactEmail" class="form-label">Your Email:</label>
+        <input type="email" class="form-control" id="contactEmail" required>
+    </div>
+    <div class="mb-3">
+        <label for="contactMessage" class="form-label">Your Message:</label>
+        <textarea class="form-control" id="contactMessage" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}
